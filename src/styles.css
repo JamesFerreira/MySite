@@ -4,7 +4,6 @@ body {
   color: grey;
   background: rgb(77,202,207);
   background: linear-gradient(145deg, rgba(77,202,207,1) 0%, rgba(107,173,121,1) 57%, rgba(90,175,80,1) 100%);
-  cursor: none;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -98,20 +97,6 @@ h1 {
 .fading_line{ 
   height: 1px;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #aaa));
-}
-
-.cursor {
-  background: white;
-  height: 10px;
-  width: 10px;
-  border-radius: 50%;
-  display: block;
-  position: fixed;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-  transition: height 300ms ease, width 300ms ease;
-  z-index: 4;
 }
 
 .horizontal{
@@ -286,6 +271,7 @@ h2{
 .experience{
   display: block;
   margin-left: 30px;
+  width: 300px;
 }
 
 .exp{
@@ -323,8 +309,8 @@ margin-top: 15px;
 
 svg{
   position: relative;
-  width: 150px;
-  height: 150;
+  width: 120px;
+  height: 120px;
   z-index: 1000;
 }
 
@@ -339,16 +325,35 @@ svg circle{
 }
 
 svg circle:nth-child(2){
-  stroke-dashoffset:220;
+  stroke-dasharray:220;
   stroke-dashoffset: 220;
 }
 
-card:nth-child(1) svg circle:nth-child(2){
+.circle1{
   stroke: #00ff43;
 }
-card:nth-child(2) svg circle:nth-child(2){
+.circle2{
   stroke: #00a1ff;
 }
-card:nth-child(3) svg circle:nth-child(2){
+.circle3{
   stroke: #ff03f7;
+}
+.percent{
+  position: relative;
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  box-shadow: inset 0 0 50px #000;
+  z-index: 1000;
+  background-color: #00a1ff;
+}
+.percent .number{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
 }
