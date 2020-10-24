@@ -76,6 +76,27 @@ body {
   animation-delay: 3.5;
 }
 
+.box-area li:nth-child(7){
+  left: 25%;
+  width: 150PX;
+  height: 150px;
+  animation-delay: 5;
+  animation-duration: 12s;
+}
+
+.box-area li:nth-child(8){
+  left: 45%;
+  width: 50PX;
+  height: 50px;
+  animation-delay: 2;
+}
+
+.box-area li:nth-child(9){
+  left: 67%;
+  width: 110PX;
+  height: 110px;
+  animation-delay: 3.5;
+}
 @keyframes animate{
   0%{
     transform: translateY(0) rotate(0deg);
@@ -307,53 +328,111 @@ margin-top: 15px;
   margin-right: 10px;
 }
 
-svg{
-  position: relative;
-  width: 120px;
-  height: 120px;
-  z-index: 1000;
-}
-
-svg circle{
-  width: 100%;
-  height: 100%;
-  fill: none;
-  stroke: #191919;
-  stroke-width: 10;
-  stroke-linecap: round;
-  transform: translate(5px,5px);
-}
-
-svg circle:nth-child(2){
-  stroke-dasharray:220;
-  stroke-dashoffset: 220;
-}
-
-.circle1{
-  stroke: #00ff43;
-}
-.circle2{
-  stroke: #00a1ff;
-}
-.circle3{
-  stroke: #ff03f7;
-}
-.percent{
-  position: relative;
-  width: 120px;
-  height: 120px;
-  border-radius: 50%;
-  box-shadow: inset 0 0 50px #000;
-  z-index: 1000;
-  background-color: #00a1ff;
-}
-.percent .number{
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  justify-content: center;
+.wrapper{
+  width: 300px;
+  height: 225px;
+  margin-top: 15px;
+  margin-left: -20px;
+  display: flex;
+  flex-wrap: wrap;
   align-items: center;
-  border-radius: 50%;
+  justify-content: space-around;
 }
+.wrapper .card .circle{
+  position: relative;
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  cursor: default;
+}
+.card .circle .box,
+.card .circle .box span{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+}
+.card .circle .box{
+  height: 80px;
+  width: 80px;
+  background: #fff;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) scale(0.8);
+  transition: all 0.2s;
+}
+.card .circle:hover .box{
+  transform: translate(-50%, -50%) scale(0.91);
+}
+.card .circle .box span,
+.wrapper .card .text{
+  text-align: center;
+}
+.circle .box span{
+  font-size: 20px;
+  font-weight: 600;
+  transform: translate(-45%, -45%);
+  transition: all 0.1s;
+}
+.card .circle:hover .box span{
+  transform: translate(-45%, -45%) scale(1.09);
+}
+.card .text{
+  font-size: 20px;
+}
+@media(max-width: 753px){
+  .wrapper{
+    max-width: 700px;
+  }
+  .wrapper .card{
+    width: calc(50% - 20px);
+    margin-bottom: 20px;
+  }
+}
+@media(max-width: 505px){
+  .wrapper{
+    max-width: 500px;
+  }
+  .wrapper .card{
+    width: 100%;
+  }
+}
+
+.chk{
+  height: 20px;
+  margin-right: 5px;
+  vertical-align: middle;
+}
+
+.desck{
+  margin-top: 10px;
+}
+.knowledge{
+  width: 350px;
+  height: 225px;
+  margin-top: 15px;
+}
+.right::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 25%;
+}
+ 
+.right::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+ 
+.right::-webkit-scrollbar-thumb {
+  border-radius: 25%;
+  background-color: darkgrey;
+}
+
+.text-slider-items { 
+  display: none; 
+} 
+
+.heading { 
+  text-align: center; 
+} 
+
+.heading h3 { 
+  color: rgb(17, 223, 96); 
+  font-size: 20px; 
+} 

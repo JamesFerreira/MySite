@@ -4,12 +4,20 @@
 	<title>My Site</title>
 	<meta charset="UTF-8" />
 	<link href="src/styles.css" rel="stylesheet" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+	<script src="typed.min.js"> 
+    </script>
 </head>
 
 <body>
 
 	<div class="animation-area">
 		<ul class="box-area">
+			<li></li>
+			<li></li>
+			<li></li>
 			<li></li>
 			<li></li>
 			<li></li>
@@ -24,7 +32,13 @@
 			<div class="bg"></div>
 			<div class="pp"></div>
 			<h1 class="name">James Ferreira</h1>
-			<p class="metier">Développeur</p>
+
+			<div class="heading"> 
+				<h3> 
+					<span class="text-slider-items">Développeur full stack</span> 
+					<strong class="text-slider"></strong> 
+				</h3> 
+			</div> 
 			<div class="icons">
 				<img class="icon" src="assets/facebook.png">
 				<img class="icon" src="assets/twitter.png">
@@ -109,75 +123,116 @@
 				</div>
 			</div>
 			<br><div class="fading_line"></div>
-			<h1><img class="logos" src="assets/edu.png">Mes compétences</h1>
 			<div class="resume">
 				<div class="experience">
-					
-					<h1><img class="logos" src="assets/briefcase.png">&nbsp;Langages</h1>
-					
-					<div class="card_container">
+					<h1><img class="logos" src="assets/001-key-skills.png">&nbsp;LANGAGES</h1>
+					<div class="fading_line"></div>
+					<div class="wrapper">
 						<div class="card">
-							<div class="box">
-								<div class="percent">
-									<svg>
-										<circle cx="55" cy="55" r="55"></circle>
-										<circle class="circle1" cx="55" cy="55" r="55"></circle>
-									</svg>
-									<div class="number">
-										<h2>90<span>%</span></h2>
-									</div>
-								</div>
-								<h2 class="text">Html</h2>
-							</div>
+						  <div class="circle">
+							<div class="bar"></div>
+							<div class="box"><span></span></div>
+						  </div>
+						  <div class="text">HTML</div>
 						</div>
-						<div class="card">
-							<div class="box">
-								<div class="percent">
-									<svg>
-										<circle cx="55" cy="55" r="55"></circle>
-										<circle class="circle2" cx="55" cy="55" r="55"></circle>
-									</svg>
-									<div class="number">
-										<h2>60<span>%</span></h2>
-									</div>
-								</div>
-								<h2 class="text">CSS</h2>
+						<div class="card css">
+							<div class="circle">
+							  <div class="bar"></div>
+							  <div class="box"><span></span></div>
 							</div>
+							<div class="text">CSS</div>
+						  </div>
+						<div class="card php">
+						  <div class="circle">
+							<div class="bar"></div>
+							<div class="box"><span></span></div>
+						  </div>
+						  <div class="text">PHP</div>
 						</div>
-						<div class="card">
-							<div class="box">
-								<div class="percent">
-									<svg>
-										<circle cx="55" cy="55" r="55"></circle>
-										<circle class="circle3" cx="55" cy="55" r="55"></circle>
-									</svg>
-									<div class="number">
-										<h2>40<span>%</span></h2>
-									</div>
-								</div>
-								<h2 class="text">Javascript</h2>
+						<div class="card csharp">
+						  <div class="circle">
+							<div class="bar"></div>
+							<div class="box"><span></span></div>
+						  </div>
+						  <div class="text">C#</div>
+						</div>
+						<div class="card net">
+							<div class="circle">
+							  <div class="bar"></div>
+							  <div class="box"><span></span></div>
 							</div>
+							<div class="text">.NET</div>
 						</div>
+						<div class="card sql">
+							<div class="circle">
+							  <div class="bar"></div>
+							  <div class="box"><span></span></div>
+							</div>
+							<div class="text">SQL</div>
+						  </div>
 					</div>
-						
+					  
+					  
 				</div>
 
 				<div class="formation">
 
-					<h1><img class="logos" src="assets/edu.png">&nbsp;Connaissances</h1>
-					<div class="exp">
-						<div class="fading_line"></div>
-						<div class="annee">&nbsp;2018 - 2020&nbsp;</div>
-						<div class="job">Bac +4 RIL</div>
-						<div class="company">CESI Dijon</div>
-						<p class="desc">Bac +4 Responsable Ingénierie des Logiciels au CESI de Dijon en alternance chez Engie Ineo Infracom. </p>
+					<h1><img class="logos" src="assets/002-book.png">&nbsp;CONNAISSANCES</h1>
+					<div class="fading_line"></div>
+					<div class="knowledge">
+						<div class="desck"><img class="chk" src="assets/003-check.png">Analyser les besoins du client</div>
+						<div class="desck"><img class="chk" src="assets/003-check.png">Gestion de projet.</div>
+						<div class="desck"><img class="chk" src="assets/003-check.png">Méthode AGILE.</div>
+						<div class="desck"><img class="chk" src="assets/003-check.png">Développer une application en lien avec une base de données.</div>
+						<div class="desck"><img class="chk" src="assets/003-check.png">Conception au design ergonomique</div>
+						<div class="desck"><img class="chk" src="assets/003-check.png">Gestion de code via Git et SVN</div>
 					</div>
 				</div>
 			</div>
+			<br><div class="fading_line"></div>
 		</div>
 	</div>
-	
-	<script src="src/index.js"></script>
 </body>
-
+	<script>
+		let options = {
+		startAngle: -1.55,
+		size: 80,
+		value: 0.90,
+		fill: {gradient: ['#63BD13', '#63BD13']}
+		}
+		$(".circle .bar").circleProgress(options).on('circle-animation-progress',
+		function(event, progress, stepValue){
+		$(this).parent().find("span").text(String(stepValue.toFixed(2).substr(2)) + "%");
+		});
+		$(".css .bar").circleProgress({
+		value: 0.70
+		});
+		$(".php .bar").circleProgress({
+		value: 0.50
+		});
+		$(".csharp .bar").circleProgress({
+		value: 0.65
+		});
+		$(".net .bar").circleProgress({
+		value: 0.50
+		});
+		$(".sql .bar").circleProgress({
+		value: 0.40
+		});
+	</script>
+	<script> 
+        if ($(".text-slider").length == 1) { 
+              
+            var typed_strings =  
+                $(".text-slider-items").text(); 
+  
+            var typed = new Typed(".text-slider", { 
+                strings: typed_strings.split(", "), 
+                typeSpeed: 90, 
+                loop: true, 
+                backDelay: 4000, 
+                backSpeed: 45, 
+            }); 
+        } 
+    </script> 
 </html>
