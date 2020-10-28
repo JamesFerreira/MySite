@@ -421,9 +421,14 @@ margin-top: 15px;
 .text-slider-items { 
   display: none; 
 } 
-
+.text-slider{
+  font-family: 'Inconsolata', monospace;
+  font-weight: 100;
+  font-size: 25px;
+}
 .heading { 
   text-align: center; 
+  height: 50px;
 } 
 
 .heading h3 { 
