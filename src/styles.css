@@ -1,5 +1,5 @@
 body {
-  font-family: "lato";
+  font-family: 'Mulish', sans-serif;
   font-size: 18px;
   color: grey;
   background: rgb(77,202,207);
@@ -73,14 +73,14 @@ body {
   left: 15%;
   width: 110PX;
   height: 110px;
-  animation-delay: 3.5;
+  animation-delay: 0;
 }
 
 .box-area li:nth-child(7){
   left: 25%;
   width: 150PX;
   height: 150px;
-  animation-delay: 5;
+  animation-delay: 0;
   animation-duration: 12s;
 }
 
@@ -95,7 +95,7 @@ body {
   left: 67%;
   width: 110PX;
   height: 110px;
-  animation-delay: 3.5;
+  animation-delay: 0;
 }
 @keyframes animate{
   0%{
@@ -118,6 +118,7 @@ h1 {
 .fading_line{ 
   height: 1px;
   background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, #aaa));
+  margin-bottom: 15px;
 }
 
 .horizontal{
@@ -147,10 +148,9 @@ h1 {
 }
 
 .right{
-  height: 600px;
-  width: 700px;
+  height: 620px;
+  width: 720px;
   background-color: white;
-  margin-left: 10px;
   overflow-y: scroll;
 }
 
@@ -159,6 +159,7 @@ h1 {
   width: 600px;
   margin-left: auto;
   margin-right: auto;
+  text-align: center;
 }
 
 table.first_table{
@@ -201,7 +202,7 @@ h2{
   }
 
 .bg{
-  height: 250px;
+  height: 300px;
   background-image: url("../assets/bg1.jpg");
   background-repeat: no-repeat;
   background-size: cover;
@@ -211,8 +212,8 @@ h2{
   }
 
 .pp{
-  height: 150px;
-  width: 150px;
+  height: 200px;
+  width: 200px;
   border-radius: 50%;
   background-image: url("../assets/bald.jpg");
   background-size: cover;
@@ -238,30 +239,21 @@ h2{
   margin-top: -10px;
 }
 
-.icons{
-  height: 30px;
-  width: 73px;
-  margin-left: auto;
-  margin-right: auto;
-}
-
 .icon{
   height: 30px;
   width: 30px;
-  margin-left: auto;
-  margin-right: auto;
+}
+
+.icons{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 50 0 50px;
 }
 
 .dlcontact{
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 30px;
-  width: 350px;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: 50px;
-  
+  justify-content: space-evenly;
+  width: 100%;
 }
 
 .cv{
@@ -276,7 +268,6 @@ h2{
 
 .contact{
   font-size: 13px;
-  color: black;
   text-decoration: none;
 }
 
@@ -299,13 +290,14 @@ h2{
   width: 300px;
   height: 225px;
   margin-top: 15px;
+  margin-left: 20px;
 }
 
 .annee{
-  border: 1px solid rgb(40, 184, 71);
+  border: 1px solid rgb(84, 196, 33);
   border-radius: 5px;
-  width: 87px;
-  color:  rgb(40, 184, 71);
+  width: 89px;
+  color:  rgb(84, 196, 33);
   font-size: 15px;
   margin-top: 25px
 }
@@ -332,7 +324,6 @@ margin-top: 15px;
   width: 300px;
   height: 225px;
   margin-top: 15px;
-  margin-left: -20px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -406,22 +397,25 @@ margin-top: 15px;
   margin-top: 10px;
 }
 .knowledge{
-  width: 350px;
+  display: flex;
+  flex-direction: column;
   height: 225px;
+  margin-left: 20px;
   margin-top: 15px;
+  text-align: left;
+  justify-content: space-evenly;
 }
-.right::-webkit-scrollbar {
-  width: 5px;
-  border-radius: 25%;
+
+/* Works on Chrome/Edge/Safari */
+*::-webkit-scrollbar {
+  width: 4px;
 }
- 
-.right::-webkit-scrollbar-track {
-  background-color: transparent;
+*::-webkit-scrollbar-track {
+  background: transparent;
 }
- 
-.right::-webkit-scrollbar-thumb {
-  border-radius: 25%;
-  background-color: darkgrey;
+*::-webkit-scrollbar-thumb {
+  background-color:rgb(143, 143, 143);
+  border-radius: 20px;
 }
 
 .text-slider-items { 
@@ -433,6 +427,141 @@ margin-top: 15px;
 } 
 
 .heading h3 { 
-  color: rgb(17, 223, 96); 
+  color: rgb(84, 196, 33); 
   font-size: 20px; 
 } 
+
+.langue{
+  align-content: center;
+  margin-left: 30px;
+}
+.name_langue{
+  height: 30px;
+}
+.dots{
+  height: 50px;
+  width: 100%;
+  margin-left: 20px;
+}
+.dot {
+  height: 14px;
+  width: 14px;
+  background-color: rgb(84, 196, 33);
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 10px;
+}
+
+.dots :nth-child(10){
+  background-color:rgb(211, 211, 211);
+}
+
+.dotsA{
+  height: 50px;
+  width: 100%;
+  margin-left: 20px;
+}
+.dotsA :nth-child(7){
+  background-color: rgb(211, 211, 211);
+}
+.dotsA :nth-child(8){
+  background-color: rgb(211, 211, 211);
+}
+.dotsA :nth-child(9){
+  background-color: rgb(211, 211, 211);
+}
+.dotsA :nth-child(10){
+  background-color: rgb(211, 211, 211);
+}
+
+.langue_design{
+  display: flex;
+}
+
+.langage_name{
+  margin-left: 20px;
+}
+
+.design{
+  width: 350px;
+  margin-left: 30px;
+}
+.barre{
+  background: rgb(211, 211, 211);
+  justify-content: flex-start;
+  border-radius: 100px;
+  align-items: center;
+  position: relative;
+  padding: 0 3px;
+  display: flex;
+  height: 10px;
+  width: 300px;
+}
+.green_barS{
+  animation: loadS 3s normal forwards;
+  border-radius: 100px;
+  background: rgb(84, 196, 33);
+  height: 5px;
+  width: 0;
+}
+.green_barL{
+  animation: loadL 3s normal forwards;
+  border-radius: 100px;
+  background: rgb(84, 196, 33);
+  height: 5px;
+  width: 0;
+}
+.green_barP{
+  animation: loadP 3s normal forwards;
+  border-radius: 100px;
+  background: rgb(84, 196, 33);
+  height: 5px;
+  width: 0;
+}
+.green_barWD{
+  animation: loadWD 3s normal forwards;
+  border-radius: 100px;
+  background: rgb(84, 196, 33);
+  height: 5px;
+  width: 0;
+}
+@keyframes loadS {
+  0% { width: 0; }
+  100% { width: 35%; }
+}
+@keyframes loadL {
+  0% { width: 0; }
+  100% { width: 20%; }
+}
+@keyframes loadP {
+  0% { width: 0; }
+  100% { width: 20%; }
+}
+@keyframes loadWD {
+  0% { width: 0; }
+  100% { width: 30%; }
+}
+
+.violondingres{
+  width: 100%;
+  margin-top: 15px;
+}
+
+.second_table{
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+.vd{
+  text-align: center;
+  position: relative;
+  margin: 0;
+}
+.logosvd{
+  height: 35px;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+.iconVD{
+  height: 25px;
+}
