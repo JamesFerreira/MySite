@@ -479,12 +479,16 @@ margin-top: 15px;
 }
 
 .langage_name{
-  margin-left: 20px;
+  margin: 5px
 }
 
 .design{
   width: 350px;
   margin-left: 30px;
+  height: 250px;
+}
+.design_name{
+  margin: 5px;
 }
 .barre{
   background: rgb(211, 211, 211);
