@@ -215,7 +215,7 @@ h2{
   height: 200px;
   width: 200px;
   border-radius: 50%;
-  background-image: url("../assets/bald.jpg");
+  background-image: url("../assets/me.jpg");
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
@@ -625,17 +625,8 @@ margin-top: 15px;
   .pp{
     height: 150px;
     width: 150px;
-    border-radius: 50%;
-    background-image: url("../assets/bald.jpg");
-    border: 2px solid white;
-    -webkit-box-shadow: -7px 5px 0px 1px rgba(91,235,170,0.48);
-    -moz-box-shadow: -7px 5px 0px 1px rgba(91,235,170,0.48);
-    box-shadow: -7px 5px 0px 1px rgba(91,235,170,0.48);
   }
   .name{
-    margin-left: auto;
-    margin-right: auto;
-    font-size: x-large;
     height: 30px;
     width: 100%;
     text-align: center;
