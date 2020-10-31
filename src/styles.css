@@ -548,7 +548,7 @@ margin-top: 15px;
 }
 @keyframes loadWD {
   0% { width: 0; }
-  100% { width: 30%; }
+  100% { width: 15%; }
 }
 
 .violondingres{
@@ -1204,22 +1204,6 @@ margin-top: 15px;
     background: rgb(84, 196, 33);
     height: 5px;
     width: 0;
-  }
-  @keyframes loadS {
-    0% { width: 0; }
-    100% { width: 35%; }
-  }
-  @keyframes loadL {
-    0% { width: 0; }
-    100% { width: 20%; }
-  }
-  @keyframes loadP {
-    0% { width: 0; }
-    100% { width: 20%; }
-  }
-  @keyframes loadWD {
-    0% { width: 0; }
-    100% { width: 30%; }
   }
   
   .violondingres{
