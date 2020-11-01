@@ -209,27 +209,30 @@ h2{
   border-top-left-radius: 5px;
   border-top-right-radius: 5px;
   float:left;
+  transition: all 0.75s ease-out;
   }
 
 .pp{
-  height: 200px;
-  width: 200px;
+  height: 12rem;
+  width: 12rem;
   border-radius: 50%;
   background-image: url("../assets/me.jpg");
   background-size: cover;
   margin-left: auto;
   margin-right: auto;
   border: 2px solid white;
-  margin-top: -6em;
+  margin-top: -6rem;
   -webkit-box-shadow: -7px 5px 0px 1px rgba(91,235,170,0.48);
   -moz-box-shadow: -7px 5px 0px 1px rgba(91,235,170,0.48);
   box-shadow: -7px 5px 0px 1px rgba(91,235,170,0.48);
+  transition: all 0.75s ease-out;
 }
 
 .name{
   margin-left: auto;
   margin-right: auto;
   font-size: x-large;
+  transition: all 0.75s ease-out;
 }
 
 .metier{
@@ -605,7 +608,7 @@ margin-top: 15px;
     -moz-box-shadow: -15px -14px 2px 1px rgba(68,227,142,0.41);
     box-shadow: -15px -14px 2px 1px rgba(68,227,142,0.41);
     margin-left: -1px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     z-index: 2;
   }
   .right{
@@ -623,6 +626,7 @@ margin-top: 15px;
     border-top-right-radius: 5px;
     }
   .pp{
+    transform-style: preserve-3d;
     height: 150px;
     width: 150px;
   }
