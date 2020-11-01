@@ -1277,8 +1277,15 @@ margin-top: 15px;
   }
   
   .violondingres{
-    width: 100%;
-    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: auto;
+    height: 20vh;
+    margin-top: 20px;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 20px 20px  rgba(0,0,0,0.2), 0px 0px 50px rgba(0,0,0,0.2);
+    border-radius: 30px;
   }
   
   .second_table{
