@@ -877,7 +877,7 @@ h2{
 
 @media only screen and (max-width: 600px) {
   body {
-    font-family: 'Mulish', sans-serif;
+    font-family: 'Poppins', sans-serif;
     font-size: 18px;
     color: grey;
     display: flex;
@@ -1061,10 +1061,10 @@ h2{
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-items: space-evenly;
     width: 95vw;
     text-align: center;
-    height: 13rem;
+    height: auto;
   }
   
   .annee{
@@ -1073,7 +1073,7 @@ h2{
     width: auto;
     color:  rgb(84, 196, 33);
     font-size: 15px;
-    margin-top: 0px;
+    margin-top: 10px;
     margin-bottom: 0px;
   }
   
@@ -1315,6 +1315,7 @@ h2{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    margin: 0;
   }
   
   .langage_name{
