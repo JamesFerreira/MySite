@@ -12,7 +12,8 @@
 }
 .intro-text span.text{
   color: white;;
-  font-size: 3rem;
+  font-size: 5rem;
+  font-family: 'Lobster', cursive;
 }
 
 .hide{
@@ -37,8 +38,8 @@
 }
 
 body {
-  font-family: 'Mulish', sans-serif;
-  font-size: 18px;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
   color: grey;
   background: rgb(77,202,207);
   background: linear-gradient(145deg, rgba(77,202,207,1) 0%, rgba(107,173,121,1) 57%, rgba(90,175,80,1) 100%);
@@ -149,8 +150,8 @@ body {
 h1 {
   font-size: 20px;
   color: black;
-  margin-left: 48px;
   font-weight:normal;
+  text-align: center;
 }
 
 .fading_line{ 
@@ -318,54 +319,74 @@ h2{
 
 .resume{
   display: flex;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
 
 .resume2{
   display: flex;
+  justify-content: space-evenly;
   margin-top: 20px;
 }
 
-.experience{
-  display: block;
-  margin-left: 30px;
-  width: 300px;
+.formation{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.experience2{
-  display: block;
-  margin-left: 30px;
-  width: 300px;
+.experience{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .exp{
-  width: 300px;
-  height: 225px;
-  margin-top: 15px;
-  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  height: 13rem;
+}
+
+.experience2{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.formation2{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .annee{
   border: 1px solid rgb(84, 196, 33);
   border-radius: 5px;
-  width: 89px;
+  width: auto;
   color:  rgb(84, 196, 33);
   font-size: 15px;
-  margin-top: 25px
+  margin-bottom: 15px;
 }
 
 .job{
-font-size: 18px;
-color: black;
-margin-top: 15px;
+  font-size: 18px;
+  color: black;
 }
 
 .company{
   font-size: 16px;
-  margin-top: 5px;
   color: rgb(143, 143, 143);
 }
 
+.desc{
+  margin: 0;
+}
 .logos{
   height: 35px;
   vertical-align: middle;
@@ -374,8 +395,7 @@ margin-top: 15px;
 
 .wrapper{
   width: 300px;
-  height: 225px;
-  margin-top: 15px;
+  height: 250px;
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -408,6 +428,9 @@ margin-top: 15px;
 .card .circle .box span,
 .wrapper .card .text{
   text-align: center;
+}
+.text{
+  margin-top: 10px;
 }
 .circle .box span{
   font-size: 20px;
@@ -445,15 +468,10 @@ margin-top: 15px;
   vertical-align: middle;
 }
 
-.desck{
-  margin-top: 10px;
-}
 .knowledge{
   display: flex;
   flex-direction: column;
   height: 225px;
-  margin-left: 20px;
-  margin-top: 15px;
   text-align: left;
   justify-content: space-evenly;
 }
@@ -489,16 +507,17 @@ margin-top: 15px;
 } 
 
 .langue{
-  align-content: center;
-  margin-left: 30px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .name_langue{
   height: 30px;
 }
 .dots{
-  height: 50px;
+  height: 20px;
   width: 100%;
-  margin-left: 20px;
 }
 .dot {
   height: 14px;
@@ -509,14 +528,19 @@ margin-top: 15px;
   margin-left: 10px;
 }
 
+.dots :nth-child(1){
+  margin-left: 0;
+}
 .dots :nth-child(10){
   background-color:rgb(211, 211, 211);
 }
 
 .dotsA{
-  height: 50px;
+  height: 20px;
   width: 100%;
-  margin-left: 20px;
+}
+.dotsA :nth-child(1){
+  margin-left: 0;
 }
 .dotsA :nth-child(7){
   background-color: rgb(211, 211, 211);
@@ -533,55 +557,62 @@ margin-top: 15px;
 
 .langue_design{
   display: flex;
-}
-
-.langage_name{
-  margin: 5px
+  justify-content: space-evenly;
+  margin-top: 20px;
 }
 
 .design{
-  width: 350px;
-  margin-left: 30px;
-  height: 250px;
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
 }
-.design_name{
-  margin: 5px;
+
+.othercontainer{
+  margin-left: 20px;
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
 }
+
+.othercontainer2{
+  height: 225px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
+
 .barre{
   background: rgb(211, 211, 211);
   justify-content: flex-start;
-  border-radius: 100px;
   align-items: center;
   position: relative;
-  padding: 0 3px;
   display: flex;
-  height: 10px;
+  height: 5px;
   width: 300px;
 }
 .green_barS{
   animation: loadS 3s normal forwards;
-  border-radius: 100px;
   background: rgb(84, 196, 33);
   height: 5px;
   width: 0;
 }
 .green_barL{
   animation: loadL 3s normal forwards;
-  border-radius: 100px;
   background: rgb(84, 196, 33);
   height: 5px;
   width: 0;
 }
 .green_barP{
   animation: loadP 3s normal forwards;
-  border-radius: 100px;
   background: rgb(84, 196, 33);
   height: 5px;
   width: 0;
 }
 .green_barWD{
   animation: loadWD 3s normal forwards;
-  border-radius: 100px;
   background: rgb(84, 196, 33);
   height: 5px;
   width: 0;
@@ -610,21 +641,44 @@ margin-top: 15px;
 
 .second_table{
   width: 100%;
+  height: 10rem;
   text-align: center;
   margin-top: 15px;
+  border-spacing: 2px 2px
 }
+
 .vd{
   text-align: center;
   position: relative;
-  margin: 0;
+  margin-bottom: 30px;
 }
+
 .logosvd{
   height: 35px;
   vertical-align: middle;
   margin-right: 10px;
 }
+
 .iconVD{
-  height: 25px;
+  height: 35px;
+}
+
+.logoline{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.logoname{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+  height: auto;
 }
 
 /* -------------------------------------------------------------SMALLER SCREENS-------------------------------------------------------------*/
@@ -1160,7 +1214,7 @@ margin-top: 15px;
   .knowledge{
     display: flex;
     flex-direction: column;
-    height: 225px;
+    height: 250px;
     margin-left: 20px;
     margin-top: 0px;
     text-align: left;
