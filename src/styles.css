@@ -1,3 +1,43 @@
+.intro{
+  background: black;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.intro-text span.text{
+  color: white;;
+  font-size: 3rem;
+}
+
+.hide{
+  background: black;
+  overflow: hidden;
+}
+
+.hide span{
+  transform: translateY(100%);
+  display: inline-block;
+}
+
+.slider{
+  background-image: url("../assets/fanta.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 3;
+  transform: translateY(100%);
+}
+
 body {
   font-family: 'Mulish', sans-serif;
   font-size: 18px;
