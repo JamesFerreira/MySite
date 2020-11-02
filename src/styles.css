@@ -26,9 +26,7 @@
 }
 
 .slider{
-  background-image: url("../assets/fanta.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  background: rgb(99, 112, 114);
   position: fixed;
   top: 0;
   left: 0;
