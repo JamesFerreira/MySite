@@ -1,0 +1,56 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background: black;
+    overflow: hidden;
+  }
+
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+}
+
+.logo{
+    height: 250px;
+}
+
+.grid{
+    display: flex;
+    flex-wrap: wrap;
+    border: solid 1px;
+    width: 600px;
+    height: 600px;
+    background: transparent;  
+}
+
+.grid div{
+    width: 40px;
+    height: 40px;
+}
+
+.shooter{
+    background-image: url("assets/vaisseau.png");
+    background-size: cover;
+}
+
+.invader{
+    background-image: url("/assets/invader.png");
+    background-size: cover;
+ } 
+
+.boom{
+    background-image: url("assets/giphy.gif");
+    background-size: cover;
+}
+
+.laser{
+    background-image: url("assets/missile.png");
+    background-size: cover;
+}
