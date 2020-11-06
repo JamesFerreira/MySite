@@ -41,7 +41,7 @@ body {
 }
 
 .invader{
-    background-image: url("/assets/invader.png");
+    background-image: url("assets/invader.png");
     background-size: cover;
  } 
 
