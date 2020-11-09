@@ -152,10 +152,18 @@ h1 {
   height: 680px;
   width: 480px;
   border-radius: 4px;
- box-shadow: 6px 1px 18px -1px rgba(0,0,0,0.54) ;
-  margin-left: -1px;
+  box-shadow: 6px 1px 18px -1px rgba(0,0,0,0.54) ;
   background-color: white;
   z-index: 2;
+}
+
+.leftinfo{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 40%;
+  width: 100%;
 }
 
 .right{
@@ -178,13 +186,6 @@ table.first_table{
   margin-right: auto;
   border-spacing: 50px 0;
   margin-bottom: 20px;
-}
-
-div.leftinfo{
-  height: 180px;
-  width: 290px;
-  margin-left: 42px;
-  margin-top: 25px;
 }
 
 div.rightinfo{
@@ -243,13 +244,6 @@ h2{
   font-size: x-large;
 }
 
-.metier{
-  color: green;
-  margin-left: auto;
-  margin-right: auto;
-  margin-top: -10px;
-}
-
 .icon{
   height: 30px;
   width: 30px;
@@ -257,8 +251,8 @@ h2{
 
 .icons{
   display: flex;
+  width: 100%;
   justify-content: space-evenly;
-  margin: 50 0 50px;
 }
 
 .dlcontact{
@@ -686,8 +680,8 @@ h2{
     z-index: 2;
   }
   .right{
-    height: 470px;
-    width: 620px;
+    height: 98%;
+    width: auto;
     background-color: white;
     overflow-y: scroll;
   }
